@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to n8n AI !!</title>
+    <style>
+        /* Full-screen video background */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            background: #000 url('https://upload.wikimedia.org/wikipedia/commons/4/43/ESO-VLT-Laser-Guide-Star.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .content {
+            position: relative;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .slideshow {
+            font-size: 3rem;
+            animation: fadeInOut 8s infinite;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            45% {
+                opacity: 1;
+            }
+
+            55% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Milky Way video with fallback poster -->
+    <video class="video-bg" autoplay muted loop playsinline
+        poster="https://upload.wikimedia.org/wikipedia/commons/4/43/ESO-VLT-Laser-Guide-Star.jpg">
+        <source src="https://cdn.jsdelivr.net/gh/niklas-heer/space-videos/milky-way.mp4" type="video/mp4" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/ESO-VLT-Laser-Guide-Star.jpg"
+            alt="Milky Way Galaxy">
+    </video>
+    <div class="content">
+        <div class="slideshow">Welcome to n8n AI !!PROD!v1.1!</div>
+    </div>
+</body>
+
+</html>

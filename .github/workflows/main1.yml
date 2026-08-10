@@ -6,10 +6,10 @@ on:
 
 jobs:
   first-job:
+    runs-on: ubuntu-latest
     steps:
       - name: greeting
-        run: echo "hello welcome"
-    steps:
+        run: echo "hello welcome" 
       - name: Knowledge transfer
         run: |
           echo "hello KT-1"

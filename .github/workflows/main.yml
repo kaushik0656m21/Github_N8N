@@ -1,14 +1,21 @@
-name: firt-workflow
-on: workflow_dispatch
+name: first-workflow
+
+on:
+  push:
+    branches: [ dev-learn ] # Automatically runs when you push to dev-learn
+  workflow_dispatch:        # Allows manual trigger from GitHub UI
+
 jobs:
   first-job: 
     runs-on: ubuntu-latest
     steps:
-     - name: To greet
-       run: echo "Hello welcome"
-     - name: To give background
-       run: |
-         echo "Hello your KT is started"
-         echo "please ask if you have any doubts"
-     - name: Target date 
+      - name: to greet
+        run: echo "Hello welcome"
+
+      - name: to give background
+        run: |
+          echo "Hello your KT is started"
+          echo "please ask if you have any doubts"
+
+      - name: Target date 
         run: echo "complete in 1 month"

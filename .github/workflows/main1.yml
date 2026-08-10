@@ -1,10 +1,28 @@
-name: firt-workflow
-on: workflow_dispatch
+name: CI-workflow
+on: 
+  push:
+    branch: [main]
+  workflow_dispatch:
+  
 jobs:
-  first-job: 
+  name: first-job
+    runs-on: ubuntu-latest 
+	steps:
+	  - name: to greet
+	    run: echo "Hello welcome"
+	  -name: execution
+	    run: |
+		  echo "KT part 1"
+		  echo "Interval"
+		  echo "KT part 2"
+jobs:
+  name: second-job 
     runs-on: ubuntu-latest
-    steps:
-     - name: to greet
-       run: "Hello welcome"
-     - name: to give background
-       run: "Hello your KT is started"
+	steps:
+	 -  name: part-2 welcome
+	    run: echo "part 2 welcome begins"
+	 -  name: part-2 KT
+	    run: |
+	      echo "part 2 start"
+		  echo "interval"
+		  echo "part 2 the end"

@@ -1,10 +1,14 @@
-name: firt-workflow
+name: first-workflow
 on: workflow_dispatch
 jobs:
   first-job: 
     runs-on: ubuntu-latest
     steps:
-     - name: to greet
+     - name: To greet
        run: echo "Hello welcome"
-     - name: to give background
-       run: echo "Hello your KT is started"
+     - name: To give background
+       run: |
+         echo "Hello your KT is started"
+         echo "please ask if you have any doubts"
+     - name: Target date 
+        run: echo "complete in 1 month"

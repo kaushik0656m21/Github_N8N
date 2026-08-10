@@ -1,0 +1,10 @@
+name: firt-workflow
+on: workflow_dispatch
+jobs:
+  first-job: 
+    runs-on: ubuntu-latest
+    steps:
+     - name: to greet
+       run: "Hello welcome"
+     - name: to give background
+       run: "Hello your KT is started"

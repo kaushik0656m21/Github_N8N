@@ -1,16 +1,16 @@
-name: second-workflow
-on: 
+name: CI-workflow
+on:
   push:
     branches: [main]
   workflow_dispatch:
-
-jobs:
-  first-job:
+  
+jobs: 
+  CI:
     runs-on: ubuntu-latest
     steps:
-      - name: greeting
-        run: echo "hello welcome" 
-      - name: Knowledge transfer
+      - name: clonning repo
+        run: echo "clonning repo"
+      - name: install plugins
         run: |
-          echo "hello KT-1"
-          echo "hellp KT-2"
+          echo "cleaning"
+          echo "brooming"

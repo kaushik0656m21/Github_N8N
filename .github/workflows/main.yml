@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: to greet
-       run: "Hello welcome"
+       run: echo "Hello welcome"
      - name: to give background
-       run: "Hello your KT is started"
+       run: echo "Hello your KT is started"

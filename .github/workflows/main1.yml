@@ -1,16 +1,16 @@
 name: second-workflow
 on: 
   push:
-  branches: [main]
-   workflow_dispatch:
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   first-job:
-     steps:
-        - name: greeting
-          run: echo "hello welcome"
-     steps:
-        - name: Knowledge transfer
-          run: |
-            echo "hello KT-1"
-            echo "hellp KT-2"
+    steps:
+      - name: greeting
+        run: echo "hello welcome"
+    steps:
+      - name: Knowledge transfer
+        run: |
+          echo "hello KT-1"
+          echo "hellp KT-2"

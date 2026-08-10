@@ -1,28 +1,27 @@
 name: CI-workflow
 on: 
   push:
-    branch: [main]
+    branches: [main]
   workflow_dispatch:
   
 jobs:
-  name: first-job
+  first-job:
     runs-on: ubuntu-latest 
-	steps:
-	  - name: to greet
-	    run: echo "Hello welcome"
-	  -name: execution
-	    run: |
-		  echo "KT part 1"
-		  echo "Interval"
-		  echo "KT part 2"
-jobs:
-  name: second-job 
+    steps:
+      - name: to greet
+        run: echo "Hello welcome"
+      - name: execution
+        run: |
+          echo "KT part 1"
+          echo "Interval"
+          echo "KT part 2"
+  second-job: 
     runs-on: ubuntu-latest
-	steps:
-	 -  name: part-2 welcome
-	    run: echo "part 2 welcome begins"
-	 -  name: part-2 KT
-	    run: |
-	      echo "part 2 start"
-		  echo "interval"
-		  echo "part 2 the end"
+    steps:
+      -  name: part-2 welcome
+         run: echo "part 2 welcome begins"
+      -  name: part-2 KT
+         run: |
+           echo "part 2 start"
+           echo "interval"
+           echo "part 2 the end"
